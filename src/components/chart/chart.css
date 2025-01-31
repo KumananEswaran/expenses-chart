@@ -1,0 +1,79 @@
+.chart {
+	width: 540px;
+	margin-inline: auto;
+	margin-block-start: 24px;
+	background-color: var(--color-card-white);
+	border-radius: 10px;
+	padding: 32px 40px 40px 40px;
+}
+
+.chart__header {
+	font-family: var(--font-family);
+	font-size: var(--font-l);
+	font-weight: var(--font-bold);
+	padding-block-end: 57px;
+}
+
+.chart__container {
+	cursor: pointer;
+	margin-block-end: 32px;
+}
+
+hr {
+	border: 1px solid var(--color-cream-bg);
+}
+
+.chart__summary {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-family: var(--font-family);
+	margin-block-start: 32px;
+}
+
+.chart__text p:first-child,
+.chart__text-2 p:nth-child(2) {
+	font-size: var(--font-m);
+	font-weight: var(--font-regular);
+	color: var(--color-medium-brown);
+}
+
+.chart__text p:nth-child(2) {
+	font-size: var(--font-xl);
+	font-weight: var(--font-bold);
+	color: var(--color-dark-brown);
+}
+
+.chart__text-2 {
+	text-align: right;
+}
+
+.chart__text-2 p:nth-child(1) {
+	font-size: var(--font-m);
+	font-weight: var(--font-bold);
+	color: var(--color-dark-brown);
+}
+
+@media screen and (max-width: 550px) {
+	.chart {
+		width: 343px;
+		padding: 24px 20px;
+	}
+
+	.chart__header {
+		font-size: 24px;
+	}
+
+	.chart__text p:first-child,
+	.chart__text-2 p:nth-child(2) {
+		font-size: var(--font-s);
+	}
+
+	.chart__text p:nth-child(2) {
+		font-size: 30px;
+	}
+
+	.chart__text-2 p:nth-child(1) {
+		font-size: var(--font-s);
+	}
+}
